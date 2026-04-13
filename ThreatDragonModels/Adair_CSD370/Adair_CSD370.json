@@ -477,7 +477,7 @@
             },
             "attrs": {
               "text": {
-                "text": "User Database"
+                "text": "SQL Database"
               },
               "topLine": {
                 "stroke": "red",
@@ -578,7 +578,7 @@
             "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "User Database",
+              "name": "SQL Database",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -602,10 +602,36 @@
                   "new": false,
                   "number": 6,
                   "score": ""
+                },
+                {
+                  "id": "ebb5c156-e046-47a4-9941-ac5dbd847672",
+                  "title": "SQL Injection Attack on Database",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "An attacker may inject malicious SQL queries to manipulate or retrieve sensitive data from the database.",
+                  "mitigation": "Use parameterized queries, input validation, and stored procedures to prevent SQL injection attacks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "e1cfa9b1-511b-4a67-8199-71ef2885d771",
+                  "title": "Unauthorized Database Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may gain unauthorized access to the database due to weak authentication or misconfigured permissions.",
+                  "mitigation": "Implement strong authentication, enforce role-based access control, and regularly audit database permissions.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0
@@ -953,6 +979,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 11
   }
 }
